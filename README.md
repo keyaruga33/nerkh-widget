@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Plasma-6-1d99f3?style=for-the-badge&logo=kde&logoColor=white" alt="Plasma 6">
   <img src="https://img.shields.io/badge/Qt-6-41cd52?style=for-the-badge&logo=qt&logoColor=white" alt="Qt 6">
   <img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge" alt="GPL-3.0">
-  <img src="https://img.shields.io/badge/version-1.3-8e44ad?style=for-the-badge" alt="v1.3">
+  <img src="https://img.shields.io/badge/version-1.4-8e44ad?style=for-the-badge" alt="v1.4">
 </p>
 
 <p>
@@ -64,17 +64,17 @@ Park it on your **desktop** and watch a whole list at once. Or drop it in your *
 
 No account, no API key, no fiddling to get started — it all works the moment you add it.
 
-### <img src="https://raw.githubusercontent.com/keyaruga33/keyaruga33/main/assets/icons/layers.svg" width="20" align="top"> &nbsp;56 assets, sorted into three groups
+### <img src="https://raw.githubusercontent.com/keyaruga33/keyaruga33/main/assets/icons/layers.svg" width="20" align="top"> &nbsp;100 assets, sorted into three groups
 
-Currencies, gold and Iranian coins, and crypto — split across three groups: **Fiat**, **Metals &amp; Coins**, and **Crypto**.
+Currencies, gold, precious metals, Iranian coins, and crypto — split across three groups: **Fiat**, **Metals &amp; Coins**, and **Crypto**.
 
 | Group | How many | A few of them |
 | ----- | :---: | -------- |
-| Fiat currencies | 27 | USD, EUR, GBP, AED, TRY, CNY, … |
-| Gold, metals &amp; coins | 9 | 18K gold, Bahar Azadi &amp; Emami coins, … |
-| Cryptocurrencies | 20 | BTC, ETH, USDT, plus the usual stablecoins |
+| Fiat currencies | 44 | USD, EUR, GBP, AED, TRY, CNY, remittance &amp; regional markets (Istanbul, Herat, Sulaymaniyah, …), … |
+| Gold, metals &amp; coins | 13 | 18K gold, global ounces (Gold, Silver, Platinum, Palladium, Rhodium), coins, … |
+| Cryptocurrencies | 43 | BTC, ETH, USDT, TON, NOT, PEPE, NEAR, AAVE, SOL, and more |
 
-Show only the ones you actually follow, and shuffle them however you like — you can reorder the **assets inside a group** and the **groups themselves**.
+Show only the ones you actually follow, and shuffle them however you like — you can reorder the **assets inside a group** and the **groups themselves**. Free remittance and regional markets support both hyphen (`-`) and underscore (`_`) symbol styles interchangeably.
 
 > <img src="https://raw.githubusercontent.com/keyaruga33/keyaruga33/main/assets/icons/link.svg" width="14" align="top"> Want the whole list, with symbols and Persian/English names? → **[Supported Assets](SUPPORTED_ASSETS.md)**
 
@@ -82,8 +82,8 @@ Show only the ones you actually follow, and shuffle them however you like — yo
 
 Put it wherever it suits you:
 
-- **On the desktop**, it stretches out into a full list of everything you've turned on.
-- **In the panel**, it shrinks down to a single price you pick and keeps it right there.
+- **On the desktop**, it stretches out into a full view of everything you've turned on — in classic list, modern floating cards, or 2-column grid mode.
+- **In the panel**, it shrinks down to keep an eye on your chosen price, or automatically **cycles through all your enabled assets** on a customizable timer (2 to 60 seconds).
 
 ### <img src="https://raw.githubusercontent.com/keyaruga33/keyaruga33/main/assets/icons/refresh.svg" width="20" align="top"> &nbsp;Refresh whenever you feel like it
 
@@ -98,8 +98,9 @@ When Nerkh grabs new prices is entirely up to you:
 The current number is nice, but Nerkh can also show you where each asset went today:
 
 - **How much it changed**, in percent.
-- **Up or down**, colored so you catch it instantly.
-- A little **change bar** when you'd rather glance than read digits.
+- **Modern pill badges**, clean colored text, or delta indicator bars.
+- **Price difference amounts** (+/- in Toman or USD) alongside percentage shifts.
+- **Quick search &amp; filter bar** in the popup to instantly locate any currency, metal, or coin.
 - And **group labels**, if a long list needs a bit of tidying.
 
 ### <img src="https://raw.githubusercontent.com/keyaruga33/keyaruga33/main/assets/icons/globe.svg" width="20" align="top"> &nbsp;Persian and English, the way they should be
@@ -116,9 +117,13 @@ It's bilingual through and through, and it plays by Iranian conventions:
 
 Straight away it picks up your **KDE / Qt theme**, and from there you can tweak plenty:
 
-- **Per-asset icons** you can leave on or turn off.
-- **Icon size** — small, medium, or large.
-- **Font size** — small, normal, large, or huge.
+- **Opacity &amp; transparency slider** from 10% to 100% to seamlessly blend into your desktop or panel.
+- **Background styles** — choose between system default, translucent, modern glassmorphic blur, solid card, or frameless.
+- **Corner roundness slider** to dial corner curvature smoothly from 0 px (sharp square) to 32 px (smooth pill).
+- **Display layouts** — classic list, modern floating cards with hover highlight, 2-column grid, or compact rows.
+- **Subtle accent frame border** for an elegant contour.
+- **Panel options** — single asset or auto-cycling, with toggles for change indicators and currency units.
+- **Per-asset icons** you can leave on or turn off, with customizable icon and text sizes.
 - **Labels** — the asset's name, its symbol, or both together.
 
 ### <img src="https://raw.githubusercontent.com/keyaruga33/keyaruga33/main/assets/icons/api.svg" width="20" align="top"> &nbsp;Free data out of the box, or plug in your own

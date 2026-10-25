@@ -176,7 +176,7 @@ Item {
 
             var updatedMs = Date.parse(r.updated_at)
 
-            map[sym] = {
+            var rateData = {
                 symbol: sym,
                 type: r.type || Assets.typeFor(sym),
                 name: r.name || Assets.nameFor(sym, "en"),
@@ -191,6 +191,12 @@ Item {
                 updatedAt: isNaN(updatedMs) ? Date.now() : updatedMs,
                 stale: r.stale === true
             }
+
+            map[sym] = rateData
+            if (sym.indexOf("_") !== -1)
+                map[sym.replace(/_/g, "-")] = rateData
+            else if (sym.indexOf("-") !== -1)
+                map[sym.replace(/-/g, "_")] = rateData
         }
 
         rates = map

@@ -92,7 +92,10 @@ KCM.SimpleKCM {
         var q = search.text.trim().toLowerCase()
         if (q.length === 0)
             return true
-        return asset.symbol.toLowerCase().indexOf(q) !== -1
+        var qAlt = q.indexOf("-") !== -1 ? q.replace(/-/g, "_") : q.replace(/_/g, "-")
+        var sym = asset.symbol.toLowerCase()
+        return sym.indexOf(q) !== -1
+            || sym.indexOf(qAlt) !== -1
             || asset.en.toLowerCase().indexOf(q) !== -1
             || asset.fa.indexOf(search.text.trim()) !== -1
     }

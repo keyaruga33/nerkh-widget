@@ -10,6 +10,7 @@ import "lib/Translations.js" as Tr
 PlasmoidItem {
     id: root
 
+    // ── Internationalization & Numbering ──
     readonly property string lang: {
         var l = Plasmoid.configuration.language
         if (l === "fa" || l === "en")
@@ -24,6 +25,7 @@ PlasmoidItem {
         return lang === "fa" ? "persian" : "latin"
     }
 
+    // ── Asset Symbols ──
     readonly property var symbols: Assets.sortedBy(
         Assets.parseList(Plasmoid.configuration.enabledAssets),
         Plasmoid.configuration.groupOrder)
@@ -38,6 +40,7 @@ PlasmoidItem {
     readonly property bool showingFull:
         root.expanded || Plasmoid.formFactor === PlasmaCore.Types.Planar
 
+    // ── Data Source ──
     RatesSource {
         id: rates
         baseUrl: Plasmoid.configuration.apiBaseUrl
@@ -51,6 +54,7 @@ PlasmoidItem {
         active: root.showingFull || Plasmoid.formFactor !== PlasmaCore.Types.Planar
     }
 
+    // ── Clock Tick ──
     property double clockTick: 0
 
     Timer {
@@ -64,24 +68,35 @@ PlasmoidItem {
     toolTipMainText: Tr.t(lang, "appName")
     toolTipSubText: Tr.t(lang, "tagline")
 
+    Plasmoid.backgroundHints: Plasmoid.formFactor === PlasmaCore.Types.Planar
+        ? PlasmaCore.Types.NoBackground
+        : PlasmaCore.Types.DefaultBackground
+
     preferredRepresentation: Plasmoid.formFactor === PlasmaCore.Types.Planar
         ? fullRepresentation : compactRepresentation
 
     switchWidth: Kirigami.Units.gridUnit * 14
     switchHeight: Kirigami.Units.gridUnit * 10
 
+    // ── Compact Panel Representation ──
     compactRepresentation: CompactRepresentation {
         source: rates
         symbol: root.compactSymbol
+        symbols: root.symbols
         lang: root.lang
         numerals: root.numerals
         unitScale: Plasmoid.configuration.unitScale
         showIcon: Plasmoid.configuration.showIcon
         iconSize: Plasmoid.configuration.iconSize
         fontDelta: Plasmoid.configuration.fontDelta
+        displayMode: Plasmoid.configuration.compactDisplayMode
+        cycleInterval: Plasmoid.configuration.compactCycleInterval
+        showChange: Plasmoid.configuration.compactShowChange
+        showUnit: Plasmoid.configuration.showCompactUnit
         onToggleRequested: root.expanded = !root.expanded
     }
 
+    // ── Full Popup / Desktop Representation ──
     fullRepresentation: FullRepresentation {
         source: rates
         symbols: root.symbols
@@ -98,8 +113,19 @@ PlasmoidItem {
         showGroupLabels: Plasmoid.configuration.showGroupLabels
         autoRefresh: Plasmoid.configuration.autoRefresh
         clockTick: root.clockTick
+
+        widgetOpacity: Plasmoid.configuration.widgetOpacity
+        backgroundStyle: Plasmoid.configuration.backgroundStyle
+        widgetRadius: Plasmoid.configuration.widgetRadius
+        viewLayout: Plasmoid.configuration.viewLayout
+        cardBorder: Plasmoid.configuration.cardBorder
+        changeBadgeStyle: Plasmoid.configuration.changeBadgeStyle
+        showSearchBar: Plasmoid.configuration.showSearchBar
+        showPriceDifference: Plasmoid.configuration.showPriceDifference
+        showTimestamp: Plasmoid.configuration.showTimestamp
     }
 
+    // ── Context Actions ──
     Plasmoid.contextualActions: [
         PlasmaCore.Action {
             text: Tr.t(root.lang, "refresh")

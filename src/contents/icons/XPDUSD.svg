@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+<defs>
+  <linearGradient id="gPd" x1="0" y1="0" x2="0.35" y2="1">
+    <stop offset="0" stop-color="#EFECE6"/>
+    <stop offset="0.55" stop-color="#C5BEB3"/>
+    <stop offset="1" stop-color="#7B7265"/>
+  </linearGradient>
+</defs>
+<circle cx="12" cy="12" r="12" fill="url(#gPd)"/>
+<circle cx="12" cy="12" r="7.8" fill="none" stroke="#494238" stroke-opacity="0.5" stroke-width="1"/>
+<path d="M12 4.2C9.1 6.5 9.1 17.5 12 19.8M12 4.2C14.9 6.5 14.9 17.5 12 19.8M4.6 9.6H19.4M4.6 14.4H19.4" fill="none" stroke="#494238" stroke-opacity="0.4" stroke-width="0.8" stroke-linecap="round"/>
+<text x="12" y="14.8" font-family="sans-serif" font-size="7.5" font-weight="900" text-anchor="middle" fill="#2E281F">Pd</text>
+<circle cx="12" cy="12" r="11.5" fill="none" stroke="#000000" stroke-opacity="0.22" stroke-width="1"/>
+</svg>

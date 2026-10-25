@@ -1,6 +1,7 @@
 .pragma library
 
 var STRINGS = {
+    // ── English Strings ──
     en: {
         appName:          "Nerkh",
         tagline:          "Rates",
@@ -33,6 +34,9 @@ var STRINGS = {
         unitToman:        "T",
         unitRial:         "R",
         unitUsd:          "$",
+
+        searchPlaceholder:    "Search currencies, gold or crypto…",
+        allAssets:            "All",
 
         cfgArrange:           "Your list",
         cfgArrangeHint:       "Reorder groups and assets. This is the order the widget shows them in.",
@@ -75,6 +79,44 @@ var STRINGS = {
         cfgShowGroupLabels:   "Show group headings",
         cfgCompactSymbol:     "Show in panel",
 
+        // ── Customization & Styling Options ──
+        cfgCustomization:     "Customization & Layout",
+        cfgWidgetOpacity:     "Background opacity",
+        cfgBackgroundStyle:   "Background style",
+        cfgBgSystem:          "System default",
+        cfgBgTranslucent:     "Translucent",
+        cfgBgGlass:           "Glassmorphic blur",
+        cfgBgCard:            "Solid card",
+        cfgBgFrameless:       "Frameless (transparent)",
+        cfgWidgetRadius:      "Corner roundness",
+        cfgRadiusSharp:       "Sharp (0px)",
+        cfgRadiusRounded:     "Rounded (12px)",
+        cfgRadiusPill:        "Pill (24px)",
+        cfgCardBorder:        "Subtle frame border",
+        cfgViewLayout:        "Display layout",
+        cfgLayoutList:        "Classic list",
+        cfgLayoutCards:       "Modern cards",
+        cfgLayoutGrid:        "2-column grid",
+        cfgLayoutCompact:     "Compact rows",
+        cfgChangeBadgeStyle:  "Change badge style",
+        cfgBadgePill:         "Pill badge (+/-)",
+        cfgBadgeText:         "Colored text",
+        cfgBadgeBar:          "Delta bar",
+        cfgShowSearchBar:     "Show search & filter bar",
+        cfgShowPriceDiff:     "Show price difference amount",
+        cfgShowTimestamp:     "Show last update time",
+
+        // ── Panel Representation Options ──
+        cfgPanelDisplay:          "Panel display",
+        cfgCompactDisplayMode:    "Display mode in panel",
+        cfgCompactSingle:         "Single asset",
+        cfgCompactCycle:          "Auto-cycle enabled assets",
+        cfgCompactCycleInterval:  "Cycle interval",
+        cfgCompactCycleSeconds:   "seconds",
+        cfgCompactShowChange:     "Show change indicator in panel",
+        cfgShowCompactUnit:       "Show currency unit in panel",
+
+        // ── Data & Updates ──
         cfgUpdates:           "Updates",
         cfgAutoRefresh:       "Update automatically",
         cfgInterval:          "Update every",
@@ -97,6 +139,8 @@ var STRINGS = {
         cfgTestOk:            "Reached the server — %1 rates returned.",
         cfgTestFail:          "No answer: %1"
     },
+
+    // ── Persian Strings ──
     fa: {
         appName:          "نرخ",
         tagline:          "نرخ‌ها",
@@ -129,6 +173,9 @@ var STRINGS = {
         unitToman:        "تومان",
         unitRial:         "ریال",
         unitUsd:          "دلار",
+
+        searchPlaceholder:    "جستجوی ارز، طلا یا رمزارز…",
+        allAssets:            "همه",
 
         cfgArrange:           "فهرست شما",
         cfgArrangeHint:       "ترتیب گروه‌ها و دارایی‌ها را تغییر دهید. ویجت به همین ترتیب نمایش می‌دهد.",
@@ -171,6 +218,44 @@ var STRINGS = {
         cfgShowGroupLabels:   "نمایش عنوان گروه‌ها",
         cfgCompactSymbol:     "نمایش در پنل",
 
+        // ── Customization & Styling Options ──
+        cfgCustomization:     "شخصی‌سازی و چیدمان",
+        cfgWidgetOpacity:     "میزان شفافیت پس‌زمینه",
+        cfgBackgroundStyle:   "سبک پس‌زمینه",
+        cfgBgSystem:          "پیش‌فرض سیستم",
+        cfgBgTranslucent:     "نیمه‌شفاف",
+        cfgBgGlass:           "افکت شیشه‌ای (Glass)",
+        cfgBgCard:            "کارت توپر",
+        cfgBgFrameless:       "بدون قاب (شفاف خالص)",
+        cfgWidgetRadius:      "گردی گوشه‌ها",
+        cfgRadiusSharp:       "تیز (۰)",
+        cfgRadiusRounded:     "گرد (۱۲)",
+        cfgRadiusPill:        "خیلی گرد (۲۴)",
+        cfgCardBorder:        "حاشیه باریک پیرامون ویجت",
+        cfgViewLayout:        "نوع نمایش",
+        cfgLayoutList:        "فهرست کلاسیک",
+        cfgLayoutCards:       "کارت‌های مدرن",
+        cfgLayoutGrid:        "شبکه دو ستونه",
+        cfgLayoutCompact:     "ردیف‌های فشرده",
+        cfgChangeBadgeStyle:  "سبک نمایش درصد تغییرات",
+        cfgBadgePill:         "نشان بیضی رنگی (+/-)",
+        cfgBadgeText:         "متن رنگی ساده",
+        cfgBadgeBar:          "نوار حاشیه",
+        cfgShowSearchBar:     "نمایش نوار جستجو و فیلتر",
+        cfgShowPriceDiff:     "نمایش مقدار اختلاف عددی قیمت",
+        cfgShowTimestamp:     "نمایش زمان آخرین بروزرسانی",
+
+        // ── Panel Representation Options ──
+        cfgPanelDisplay:          "تنظیمات پنل",
+        cfgCompactDisplayMode:    "حالت نمایش در پنل",
+        cfgCompactSingle:         "یک نماد ثابت",
+        cfgCompactCycle:          "چرخش خودکار بین دارایی‌ها",
+        cfgCompactCycleInterval:  "فاصله زمانی چرخش",
+        cfgCompactCycleSeconds:   "ثانیه",
+        cfgCompactShowChange:     "نمایش نشانگر تغییر در پنل",
+        cfgShowCompactUnit:       "نمایش واحد پول در پنل",
+
+        // ── Data & Updates ──
         cfgUpdates:           "بروزرسانی",
         cfgAutoRefresh:       "بروزرسانی خودکار",
         cfgInterval:          "هر",
@@ -195,6 +280,7 @@ var STRINGS = {
     }
 }
 
+// ── Translation Helper ──
 function t(lang, key, args) {
     var table = STRINGS[lang] || STRINGS.en
     var s = (key in table) ? table[key] : (STRINGS.en[key] || key)

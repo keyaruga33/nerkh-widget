@@ -6,6 +6,7 @@
 
   <kcfgfile name=""/>
 
+  <!-- ── General & Data Configuration ── -->
   <group name="General">
     <entry name="enabledAssets" type="String">
       <default>USD,EUR,IR_GOLD_18K,IR_COIN_EMAMI,BTC,ETH,USDT</default>
@@ -41,7 +42,7 @@
       <default>USD</default>
     </entry>
 
-    <!-- name | symbol | both -->
+    <!-- ── Appearance & Styling Configuration ── -->
     <entry name="labelStyle" type="String">
       <default>name</default>
     </entry>
@@ -50,7 +51,6 @@
       <default>true</default>
     </entry>
 
-    <!-- small | medium | large -->
     <entry name="iconSize" type="String">
       <default>small</default>
     </entry>
@@ -73,11 +73,71 @@
       <default>true</default>
     </entry>
 
+    <entry name="widgetOpacity" type="Int">
+      <default>100</default>
+      <min>10</min>
+      <max>100</max>
+    </entry>
+
+    <entry name="backgroundStyle" type="String">
+      <default>system</default>
+    </entry>
+
+    <entry name="widgetRadius" type="Int">
+      <default>12</default>
+      <min>0</min>
+      <max>32</max>
+    </entry>
+
+    <entry name="viewLayout" type="String">
+      <default>list</default>
+    </entry>
+
+    <entry name="cardBorder" type="Bool">
+      <default>false</default>
+    </entry>
+
+    <entry name="changeBadgeStyle" type="String">
+      <default>pill</default>
+    </entry>
+
+    <entry name="showSearchBar" type="Bool">
+      <default>true</default>
+    </entry>
+
+    <entry name="showPriceDifference" type="Bool">
+      <default>false</default>
+    </entry>
+
+    <entry name="showTimestamp" type="Bool">
+      <default>true</default>
+    </entry>
+
+    <!-- ── Compact Panel Representation Configuration ── -->
     <entry name="compactSymbol" type="String">
       <default>USD</default>
     </entry>
+
+    <entry name="compactDisplayMode" type="String">
+      <default>single</default>
+    </entry>
+
+    <entry name="compactCycleInterval" type="Int">
+      <default>5</default>
+      <min>2</min>
+      <max>60</max>
+    </entry>
+
+    <entry name="compactShowChange" type="Bool">
+      <default>true</default>
+    </entry>
+
+    <entry name="showCompactUnit" type="Bool">
+      <default>true</default>
+    </entry>
   </group>
 
+  <!-- ── API Configuration ── -->
   <group name="Api">
     <entry name="apiBaseUrl" type="String">
       <default></default>
@@ -87,7 +147,6 @@
       <default></default>
     </entry>
 
-    <!-- How the key is sent: auto | bearer | header | query | none -->
     <entry name="authMethod" type="String">
       <default>auto</default>
     </entry>

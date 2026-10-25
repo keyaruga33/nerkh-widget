@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+<circle cx="12" cy="12" r="12" fill="#FFFFFF"/>
+<g transform="translate(12,12) rotate(-34) translate(-12,-12)">
+  <path d="M12 7A5 5 0 0 1 12 17A2.5 2.5 0 0 0 12 12A2.5 2.5 0 0 1 12 7Z" fill="#C63530"/>
+  <path d="M12 7A5 5 0 0 0 12 17A2.5 2.5 0 0 0 12 12A2.5 2.5 0 0 1 12 7Z" fill="#0047A0"/>
+</g>
+<rect x="4.5" y="4.5" width="3" height="0.75" fill="#000000" transform="rotate(35 6 5)"/>
+<rect x="4.5" y="5.7" width="3" height="0.75" fill="#000000" transform="rotate(35 6 5)"/>
+<rect x="4.5" y="6.9" width="3" height="0.75" fill="#000000" transform="rotate(35 6 5)"/>
+<rect x="16.5" y="16.5" width="3" height="0.75" fill="#000000" transform="rotate(35 18 17)"/>
+<rect x="16.5" y="17.7" width="3" height="0.75" fill="#000000" transform="rotate(35 18 17)"/>
+<rect x="16.5" y="18.9" width="3" height="0.75" fill="#000000" transform="rotate(35 18 17)"/>
+<circle cx="12" cy="12" r="11.5" fill="none" stroke="#000000" stroke-opacity="0.16" stroke-width="1"/>
+</svg>
